@@ -4,7 +4,7 @@
     <defName>Raiderpede</defName>
     <label>raiderpede</label>
     <race>Raiderpede</race>
-    <combatPower>420</combatPower>
+    <combatPower>580</combatPower>
     <defaultFactionType>Pirate</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
     <lifeStages>

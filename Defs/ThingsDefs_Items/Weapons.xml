@@ -14,12 +14,12 @@
       <damageAmountBase>13</damageAmountBase>
       <speed>45</speed>
       <explosionRadius>1.2</explosionRadius >
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnThingDef>FilthFuel</preExplosionSpawnThingDef>
 	<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
 	<ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="BaseGun">
     <defName>PirateCannon</defName>
     <label>pirate cannon</label>
     <description>Incendiary-shot mini-artillery device. An improvised pirate built weapon designed to be used by Raiderpedes.</description>
@@ -34,9 +34,9 @@
       <AccuracyMedium>0.18</AccuracyMedium>
       <AccuracyLong>0.06</AccuracyLong>
       <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
-	  <Mass>5</Mass>
+	  <Weapon_Bulk>2.0</Weapon_Bulk>
     </statBases>
-    <tradeability>None</tradeability>
+    <tradeability>Never</tradeability>
     <techLevel>Spacer</techLevel>
     <destroyOnDrop>True</destroyOnDrop>
     <menuHidden>True</menuHidden>

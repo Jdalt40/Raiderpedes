@@ -8,25 +8,25 @@
       <value>
         <li OtherRaiderAnimalsInsertionHook="True">
           <!-- pirate raid with raiderpedes -->        
-          <kindDef>Combat</kindDef>
+          <kindDef>Normal</kindDef>
           <commonality>100</commonality>
           <disallowedStrategies>
             <li>Siege</li>
           </disallowedStrategies>
           <options>
-            <Drifter>10</Drifter>
-			<Thrasher>3</Thrasher>
-            <Scavenger>10</Scavenger>
-            <Pirate>10</Pirate>
-            <Grenadier_EMP>0.5</Grenadier_EMP>
-            <Grenadier_Destructive>2</Grenadier_Destructive>
-            <Mercenary_Gunner>10</Mercenary_Gunner>
-            <Mercenary_Heavy>6</Mercenary_Heavy>
-            <Mercenary_Slasher>3</Mercenary_Slasher>
-            <Mercenary_Sniper>7</Mercenary_Sniper>
-            <Mercenary_Elite>10</Mercenary_Elite>
-            <PirateBoss>5</PirateBoss>
-            <Raiderpede>2.5</Raiderpede>
+            <Drifter>5</Drifter>
+            <GrenadierEMP>5</GrenadierEMP>
+            <GrenadierDestructive>20</GrenadierDestructive>
+            <Thrasher>70</Thrasher>
+            <MercenarySlasher>70</MercenarySlasher>
+            <MercenaryHeavy>60</MercenaryHeavy>
+            <MercenarySniper>80</MercenarySniper>
+            <Scavenger>100</Scavenger>
+            <Pirate>120</Pirate>
+            <MercenaryGunner>100</MercenaryGunner>
+            <MercenaryElite>100</MercenaryElite>
+            <PirateBoss>100</PirateBoss>
+            <Raiderpede>40</Raiderpede>
           </options>
         </li>
       </value>
@@ -37,7 +37,7 @@
 </match>
 </Operation>
 	<Operation Class="PatchOperationAdd"> <!-- adding raiderpedes to base defense -->
-	  <xpath>*/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef = "Settlement"]/options</xpath>
+	  <xpath>*/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef = "FactionBase"]/options</xpath>
 	  <value>
 		<Raiderpede>40</Raiderpede>
 	  </value>

@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BasePawn" Name="BaseRaiderpede" Abstract="True">
-    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <statBases>
       <PsychicSensitivity>0</PsychicSensitivity>
       <ToxicSensitivity>0</ToxicSensitivity>
@@ -24,7 +24,7 @@
     <description>A reprogrammed Mechanoid built to serve its owner's purpose. Hard to kill due to its thick plated armour. Runs on a hovercraft like system which allows it to reach high speeds.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
-      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
       <MeatAmount>0</MeatAmount>
     </statBases>
@@ -37,7 +37,6 @@
         <power>32</power>
         <cooldownTime>2.4</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
     <race>
@@ -45,7 +44,7 @@
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>MechanicalCentipede</body>
       <baseBodySize>2.0</baseBodySize>
-      <baseHealthScale>6</baseHealthScale>
+      <baseHealthScale>5</baseHealthScale>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>
@@ -63,10 +62,13 @@
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
     </race>
+    <recipes>
+      <li>ShutDownMechanoid</li>
+    </recipes>
     <butcherProducts>
       <Steel>250</Steel>
       <Plasteel>150</Plasteel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <Component>5</Component>
     </butcherProducts>
   </ThingDef>
 
